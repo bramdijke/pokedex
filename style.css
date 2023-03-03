@@ -1,0 +1,125 @@
+:root {
+    --mainBgClr: #c83434;
+    --secondBgClr: #FFFFFF;
+    --fontFamily : 'League Spartan', sans-serif;
+    --navFont: #000000;
+    --accentClr: #da2626;
+    --accentClrDark: #941919;
+    --inputClr: #d7d7d7;
+    --inputClrDark: #b4b4b4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: var(--mainBgClr);
+    font-family: var(--fontFamily)}
+
+header {
+    background-color: var(--secondBgClr);
+    border-bottom-left-radius: 50% 25%;
+    border-bottom-right-radius: 50% 25%;
+    padding-bottom: 8rem;
+    box-shadow: 0 10px 12px var(--accentClrDark);
+}
+
+.nav {
+    background-color: var(--secondBgClr);
+    width: auto;
+    margin: 0 1rem 3rem 1rem;
+    padding: 15px;
+    border-radius: 1rem;
+}
+
+.nav-ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-li {
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    color: var(--navFont);
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+.nav-li:hover {
+    
+}
+
+.nav-li img {
+    height: 4rem;
+    transition: all 0.3s;
+}
+
+.nav-li img:hover {
+    transform: scale(1.1) rotate(360deg);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.search {
+    width: auto;
+    background-color: var(--secondBgClr);
+    padding: 1rem;
+    margin: 0 3rem;
+}
+
+.search-title {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 40px;
+}
+
+.search form {
+    width: 50%;
+    margin: 1rem auto;
+    background-color: var(--inputClr);
+    padding: 10px;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 3px 4px var(--inputClrDark);
+}
+
+.search input[type=text] {
+    font-size: 1.5rem;
+    font-family: var(--fontFamily);
+    border: none;
+    background-color: var(--inputClr);
+    color: #383838;
+    width: 100%;
+}
+
+.search input:focus {
+    outline: none;
+}
+
+.search button {
+    font-size: 1.5rem;
+    border: none;
+    background-color: var(--accentClr);
+    padding: 7px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 2px 3px var(--accentClrDark);
+}
+
+.search button:hover {
+    background-color: var(--accentClrDark);
+}
+
+.search button i {
+    filter: invert(98%) sepia(100%) saturate(0%) hue-rotate(337deg) brightness(104%) contrast(102%);
+}
+
+.pokemonBox {
+    background-color: var(--secondBgClr);
+    width: fit-content;
+}
