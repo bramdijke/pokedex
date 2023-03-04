@@ -17,14 +17,23 @@
 
 html {
     background-color: var(--mainBgClr);
-    font-family: var(--fontFamily)}
+    font-family: var(--fontFamily)
+}
 
-header {
+.mainheader {
     background-color: var(--secondBgClr);
     border-bottom-left-radius: 50% 25%;
     border-bottom-right-radius: 50% 25%;
-    padding-bottom: 8rem;
     box-shadow: 0 10px 12px var(--accentClrDark);
+    padding-bottom: 8rem;
+}
+
+.pokedexheader {
+    background-color: var(--secondBgClr);
+    box-shadow: 0 10px 12px var(--accentClrDark);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
 }
 
 .nav {
@@ -38,6 +47,11 @@ header {
 .nav-ul {
     list-style-type: none;
     display: flex;
+}
+
+.nav-ul a {
+    text-decoration: none;
+    color: var(--navFont);
 }
 
 .nav-li {
@@ -109,10 +123,12 @@ header {
     cursor: pointer;
     border-radius: 10px;
     box-shadow: 0 2px 3px var(--accentClrDark);
+    transition: all ease-in-out 0.1s;
 }
 
 .search button:hover {
     background-color: var(--accentClrDark);
+    box-shadow: 0 2px 3px #430b0b;
 }
 
 .search button i {
@@ -121,5 +137,45 @@ header {
 
 .pokemonBox {
     background-color: var(--secondBgClr);
-    width: fit-content;
+    width: 70%;
+    margin: 4rem auto 2rem auto;
+    border-radius: 50px;
+    padding: 30px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    box-shadow: 0 10px 12px var(--accentClrDark);
+}
+
+.pokemonLine {
+    border-bottom: 2px solid var(--accentClrDark);
+}
+
+.pokemonImage {
+    background-color: #e1e1e1;
+    box-shadow: 3px 3px 4px var(--inputClrDark);
+    border-radius: 30px;
+}
+
+.pokemonImage img {
+    width: 100%;
+}
+
+.pokemonInfos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+}
+
+.pokemonInfos h1 {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.pokemonInfos p {
+    font-size: 2rem;
+    text-align: center;
+    margin-left: 10px;
 }
