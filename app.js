@@ -20,12 +20,19 @@ function capitalizeFirstLetter(string) {
         <div class="pokemonImage">
           <img
             src="${data.sprites.other["official-artwork"].front_default}"
+            // src="${data.sprites['front_default']}"
             alt="Pokemon name"
           />
         </div>
+        <div class="pokemonHeadInfo">
         <div class="pokemonInfos">
           <h1>${capitalizeFirstLetter(data.name)}</h3>
           <p>#${data.id}</p>
+        </div>
+        <div class="pokemonLine"></div>
+        <div class="pokemonCardBody">
+        <p>Height: ${data.height} | Weight: ${data.weight}</p>
+        </div>
         </div>
         </div>`;
       })
