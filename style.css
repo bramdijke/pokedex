@@ -183,7 +183,19 @@ html {
     margin-left: 10px;
 }
 
-.pokemonCardBody {
+.pokemonCardTypes {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 600;
+    background-color: var(--inputClr);
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 30px;
+    box-shadow: 3px 3px 4px var(--inputClrDark);
+    width: fit-content;
+}
+
+.pokemonCardSpecs {
     width: 90%;
     text-align: center;
     font-size: 1.25rem;
